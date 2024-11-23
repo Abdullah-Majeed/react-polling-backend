@@ -12,6 +12,9 @@
     "tinify": "^1.7.1",
     "validator": "^13.12.0"
   },
+  "engines": {
+    "node": "22.x"
+  },
   "name": "react-polling-backend",
   "version": "1.0.0",
   "main": "server.js",
