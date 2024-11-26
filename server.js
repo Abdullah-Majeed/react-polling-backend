@@ -11,6 +11,9 @@ app.use(express.json({ limit: '10mb' }));
 app.use((req, res, next) => {
     next();
 });
+app.get('/', (req, res) => {
+    res.status(200).json({ message: `Backend service running ${PORT}` })
+})
 app.use('/api/polls', pollRoutes);
 app.use('/api/user', userRoutes);
 mongoose.connect(process.env.MONGO_URI).then(() => {
