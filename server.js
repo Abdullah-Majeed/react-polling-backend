@@ -5,7 +5,7 @@ const pollRoutes = require("./router/polls")
 const userRoutes = require("./router/user")
 const cors = require('cors')
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4000;
 app.use(cors());
 app.use(express.json({ limit: '10mb' }));
 app.use((req, res, next) => {
